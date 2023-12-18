@@ -344,6 +344,9 @@ class _PinputState extends State<Pinput>
           }
         };
         break;
+        default:
+        forcePressEnabled = false;
+        textSelectionControls ??= desktopTextSelectionHandleControls;
     }
 
     return _PinputFormField(
